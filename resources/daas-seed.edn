@@ -1,0 +1,57 @@
+[{:_id                "metadata",
+  :missionContext     {:_id      "missionContext",
+                       :activity {:_id "activityType", :id "activity"},
+                       :mission  {:_id "missionType", :id "mission"}},
+  :security           {:_id "securityType", :Classification "UNCLASSIFIED", :Dissemination "FOR OFFICIAL USE ONLY"},
+  :cdsMetadata        {:_id "cdsMetadataType", :destinationDomain "secret", :sourceDomain "unclassified"},
+  :exercise           "EXERCISE",
+  :controlSet         {:_id                 "controlSetType",
+                       :dataType            "Access Controls",
+                       :resourceIdentity    {:_id  "resourceIdentityType",
+                                             :hash {:_id       "hashType",
+                                                    :hash      "bdda4444cbe025bd6ffba8a069b372762818faf02775978066d77b1173c25439",
+                                                    :algorithm "SHA-256"},
+                                             :id   "https://www.kaggle.com/heshamasem/binetflow?resource=download/JALvbFxOYwmeddBAmbZW%2Fversions%2F0mAQLG3iPvKhJWRxNMpm%2Ffiles%2Fcapture20110819.binetflow&downloadHash=b914e7ae81618de99514ddab3a4abeb5412bcf66d76eb8542127ad927f0e088e"},
+                       :createDateTime      1603152000000,
+                       :dataSource          "acas",
+                       :responsibleEntity   {:_id "responsibleEntityType", :cust "cust", :orig "orig"},
+                       :resourceDisposition {:_id "resourceDispositionType", :rule "rule"},
+                       :policyReference     {:_id "policyReferenceType", :reference "ref"}},
+  :authorityReference {:_id "authorityReferenceType", :id "ref"},
+  :provenanceData     {:_id "provenanceType", :dataProviderType "DMSS-KIT", :dataProvider "provider"},
+  :ocoMetadata        {:_id                "ocoMetadataType",
+                       :infrastructureUsed [{:_id "infrastructureType", :id "infra1"}],
+                       :cyberToolsUsed     [{:_id "cyberToolType", :id "tool1"}]}}
+ {:_id                "metadata",
+  :missionContext     {:_id      "missionContext",
+                       :activity {:_id "activityType", :id "activity"},
+                       :mission  {:_id "missionType", :id "mission"}},
+  :security           {:_id "securityType", :Classification "UNCLASSIFIED"},
+  :cdsMetadata        {:_id "cdsMetadataType", :destinationDomain "secret", :sourceDomain "unclassified"},
+  :exercise           "EXERCISE",
+  :controlSet         {:_id                 "controlSetType",
+                       :dataType            "Access Controls",
+                       :resourceIdentity    {:_id  "resourceIdentityType",
+                                             :hash {:_id       "hashType",
+                                                    :hash      "bdda4444cbe025bd6ffba8a069b372762818faf02775978066d77b1173c25439",
+                                                    :algorithm "SHA-256"},
+                                             :id   "https://www.kaggle.com/heshamasem/binetflow?resource=download/JALvbFxOYwmeddBAmbZW%2Fversions%2F0mAQLG3iPvKhJWRxNMpm%2Ffiles%2Fcapture20110819.binetflow&downloadHash=b914e7ae81618de99514ddab3a4abeb5412bcf66d76eb8542127ad927f0e088e"},
+                       :createDateTime      1603152000000,
+                       :dataSource          "acas",
+                       :responsibleEntity   {:_id "responsibleEntityType", :cust "cust", :orig "orig"},
+                       :resourceDisposition {:_id "resourceDispositionType", :rule "rule"},
+                       :policyReference     {:_id "policyReferenceType", :reference "ref"}},
+  :authorityReference {:_id "authorityReferenceType", :id "ref"},
+  :provenanceData     {:_id "provenanceType", :dataProviderType "DMSS-KIT", :dataProvider "provider"},
+  :ocoMetadata        {:_id                "ocoMetadataType",
+                       :infrastructureUsed [{:_id "infrastructureType", :id "infra1"}],
+                       :cyberToolsUsed     [{:_id "cyberToolType", :id "tool1"}]}}
+ {:_id "_role$unclassified", :id "UNCLASSIFIED"}
+ {:_id "_role$fouo", :id "FOR OFFICIAL USE ONLY"}
+ {:_id "_role", :id "offline_access"}
+ {:_id "_role", :id "uma_authorization"}
+ {:_id "_user$brian", :name "Brian Platz"}
+ {:_id "_user$lois", :name "Lois Deak-Williams"}
+ {:_id "_user$andrew", :name "Andrew Johnson"}
+ {:_id "_user$wes", :name "Wes Morgan"}
+ {:_id "_user$sysadmin", :name "SYSADMIN"}]

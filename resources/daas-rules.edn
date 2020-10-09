@@ -1,0 +1,195 @@
+[{:_id  "_fn$queryUnclassifiedData",
+  :name "queryUnclassifiedData?",
+  :doc  "A user of UNCLASSIFIED role can query metadata if BOTH (a) there is NO dissemination for FOUO and (b) there is a classification for UNCLASSIFIED",
+  :code "(and (not (or (relationship? (?sid) [\"metadata/security\" \"securityType/Dissemination\"] \"FOR OFFICIAL USE ONLY\") (relationship? (?sid) [\"metadata/security\" \"securityType/Dissemination\"] \"FOUO\"))) (or (relationship? (?sid) [\"metadata/security\" \"securityType/Classification\"] \"UNCLASSIFIED\") (relationship? (?sid) [\"metadata/security\" \"securityType/Classification\"] \"U\")))"}
+ {:_id        "_rule$queryUnclassifiedData",
+  :id         "queryUnclassifiedData",
+  :doc        "A _user with this rule can query unclassified data",
+  :fns        ["_fn$queryUnclassifiedData"],
+  :ops        ["query"],
+  :collection "metadata",
+  :predicates ["*"]}
+ {:_id  "_fn$queryFOUOData",
+  :name "queryFOUOData?",
+  :doc  "A user of FOUO role can query metadata if the dissemination for the metadata is FOUO",
+  :code "(or (relationship? (?sid) [\"metadata/security\" \"securityType/Dissemination\"] \"FOR OFFICIAL USE ONLY\") (relationship? (?sid) [\"metadata/security\" \"securityType/Dissemination\"] \"FOUO\"))"}
+ {:_id        "_rule$queryFOUOData",
+  :id         "queryFOUOData",
+  :doc        "A _user with this rule can query FOUO data",
+  :fns        ["_fn$queryFOUOData"],
+  :ops        ["query"],
+  :collection "metadata",
+  :predicates ["*"]}
+ {:_id        "_rule$transactAll",
+  :id         "transactAll",
+  :doc        "A _user can transact anything",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["transact"],
+  :collection "*",
+  :predicates ["*"]}
+ {:_id        "_rule$transactData",
+  :id         "transactData",
+  :doc        "A _user can transact all data",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["transact"],
+  :collection "data",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllhashType",
+  :id         "queryAllhashType",
+  :doc        "A user can query all hashType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "hashType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllresourceIdentityType",
+  :id         "queryAllresourceIdentityType",
+  :doc        "A user can query all resourceIdentityType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "resourceIdentityType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllresourceDispositionType",
+  :id         "queryAllresourceDispositionType",
+  :doc        "A user can query all resourceDispositionType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "resourceDispositionType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllpolicyReferenceType",
+  :id         "queryAllpolicyReferenceType",
+  :doc        "A user can query all policyReferenceType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "policyReferenceType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllresponsibleEntityType",
+  :id         "queryAllresponsibleEntityType",
+  :doc        "A user can query all responsibleEntityType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "responsibleEntityType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllcontrolSetType",
+  :id         "queryAllcontrolSetType",
+  :doc        "A user can query all controlSetType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "controlSetType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllactivityType",
+  :id         "queryAllactivityType",
+  :doc        "A user can query all activityType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "activityType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllmissionType",
+  :id         "queryAllmissionType",
+  :doc        "A user can query all missionType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "missionType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllmissionContext",
+  :id         "queryAllmissionContext",
+  :doc        "A user can query all missionContext",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "missionContext",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllcyberToolType",
+  :id         "queryAllcyberToolType",
+  :doc        "A user can query all cyberToolType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "cyberToolType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllinfrastructureType",
+  :id         "queryAllinfrastructureType",
+  :doc        "A user can query all infrastructureType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "infrastructureType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllocoMetadataType",
+  :id         "queryAllocoMetadataType",
+  :doc        "A user can query all ocoMetadataType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "ocoMetadataType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllcdsMetadataType",
+  :id         "queryAllcdsMetadataType",
+  :doc        "A user can query all cdsMetadataType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "cdsMetadataType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllprovenanceType",
+  :id         "queryAllprovenanceType",
+  :doc        "A user can query all provenanceType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "provenanceType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllauthorityReferenceType",
+  :id         "queryAllauthorityReferenceType",
+  :doc        "A user can query all authorityReferenceType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "authorityReferenceType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllsecurityType",
+  :id         "queryAllsecurityType",
+  :doc        "A user can query all securityType",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "securityType",
+  :predicates ["*"]}
+ {:_id        "_rule$queryAllorganization",
+  :id         "queryAllorganization",
+  :doc        "A user can query all organization",
+  :fns        [["_fn/name" "true"]],
+  :ops        ["query"],
+  :collection "organization",
+  :predicates ["*"]}
+ {:_id   ["_role/id" "UNCLASSIFIED"],
+  :rules ["_rule$transactAll"
+          "_rule$queryUnclassifiedData"
+          "_rule$queryAllhashType"
+          "_rule$queryAllresourceIdentityType"
+          "_rule$queryAllresourceDispositionType"
+          "_rule$queryAllpolicyReferenceType"
+          "_rule$queryAllresponsibleEntityType"
+          "_rule$queryAllcontrolSetType"
+          "_rule$queryAllactivityType"
+          "_rule$queryAllmissionType"
+          "_rule$queryAllmissionContext"
+          "_rule$queryAllcyberToolType"
+          "_rule$queryAllinfrastructureType"
+          "_rule$queryAllocoMetadataType"
+          "_rule$queryAllcdsMetadataType"
+          "_rule$queryAllprovenanceType"
+          "_rule$queryAllauthorityReferenceType"
+          "_rule$queryAllsecurityType"
+          "_rule$queryAllorganization"]}
+ {:_id   ["_role/id" "FOR OFFICIAL USE ONLY"],
+  :rules ["_rule$transactAll"
+          "_rule$queryFOUOData"
+          "_rule$queryAllhashType"
+          "_rule$queryAllresourceIdentityType"
+          "_rule$queryAllresourceDispositionType"
+          "_rule$queryAllpolicyReferenceType"
+          "_rule$queryAllresponsibleEntityType"
+          "_rule$queryAllcontrolSetType"
+          "_rule$queryAllactivityType"
+          "_rule$queryAllmissionType"
+          "_rule$queryAllmissionContext"
+          "_rule$queryAllcyberToolType"
+          "_rule$queryAllinfrastructureType"
+          "_rule$queryAllocoMetadataType"
+          "_rule$queryAllcdsMetadataType"
+          "_rule$queryAllprovenanceType"
+          "_rule$queryAllauthorityReferenceType"
+          "_rule$queryAllsecurityType"
+          "_rule$queryAllorganization"]}]

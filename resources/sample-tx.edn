@@ -1,0 +1,10 @@
+[{:_id        "eventMonitor$any-new-artifact"
+  :name       "any-new-artifact"
+  :query      "{\"select\":[\"_id\"],\"from\":\"metadata\",\"limit\":1}"
+  :auth       ["_auth/id" "TexrrPHNapSfqxpG2HRm7Pfv1vwULWgzb8P"]
+  :cron       "*/15 * * * * *"
+  :webhook    "https://l92xqqxncf.execute-api.us-east-1.amazonaws.com/Prod/hello"
+  :eventData  {:token "ABCDEFG"}
+  :eventQuery "{\"select\":[\"*\"],\"from\":\"metadata\",\"limit\":1}"
+  }]
+

@@ -1,0 +1,31 @@
+;SYSADMIN
+;privateKey: 602798c87164f0c1e1b2fe0f7f229d32218d828cc51ef78b462eccaa05983e4c
+;publicKey: 021c05057203c26e22616f09abfa00b6fed95b984e17cbd5e0e64eac226dc1d159
+;auth: Tf3sgBQ9G6EsrG65DXdWWamWXX3AxiDaq4z
+;Brian
+;privateKey: 1f719543da120a66e970b7e031fa4d87bdb1cb300978a023279116ff33f084b5
+;publicKey: 024a8cf57684ef5aaf58fc00cd3b9a9efc35daa2a9cfbb3ded2116773173461349
+;auth: TexrrPHNapSfqxpG2HRm7Pfv1vwULWgzb8P
+;Lois
+;privateKey: 8b3372c2289d31040a1a0f55e63eebbb1ff755435d5f77b8ba991bc865a2eda7
+;publicKey: 03726cdd1a58978783daabd02b76b48853d24d58e7626c7b18c58bc9a88baa9509
+;auth: TfJDfxRYkFoWQjc5fgCGm3ifsgPJckMLRNQ
+;Andrew
+;privateKey: bcee1d4916bad2078599bd426a424525ad749224f01f7a719a332c962c83352f
+;publicKey: 0364bb0305f616b2d93797b60440f79637e7e3559bbac388579d486bebca68e4bb
+;auth: Tf54gwMW2nLvirfhkjjXDxpWfwsMW5fDQgH
+
+[{:_id  ["_user/name", "SYSADMIN"],
+  :auth [{:_id   "_auth$sysadmin",
+          :id    "Tf3sgBQ9G6EsrG65DXdWWamWXX3AxiDaq4z",
+          :roles [["_role/id", "root"]]}]},
+ {:_id  ["_user/name", "Brian Platz"],
+  :auth [{:_id   "_auth$brian",
+          :id    "TexrrPHNapSfqxpG2HRm7Pfv1vwULWgzb8P",
+          :roles [["_role/id", "FOR OFFICIAL USE ONLY"],
+                  ["_role/id", "UNCLASSIFIED"]]}]},
+ {:_id  ["_user/name", "Lois Deak-Williams"],
+  :auth [{
+          :_id   "_auth$lois",
+          :id    "TfJDfxRYkFoWQjc5fgCGm3ifsgPJckMLRNQ",
+          :roles [["_role/id", "UNCLASSIFIED"]]}]}]

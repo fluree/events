@@ -1,0 +1,43 @@
+[{:_id  "_collection$eventMonitor"
+  :name "eventMonitor"}
+
+ ;; monitor
+ {:_id    "_predicate"
+  :name   "eventMonitor/id"
+  :doc    "Optional unique string idfor this eventMonitor."
+  :type   "string"
+  :unique true}
+ {:_id   "_predicate"
+  :name  "eventMonitor/name"
+  :doc   "Event Monitor name. Not unique and can be searched for."
+  :type  "string"
+  :index true}
+ {:_id   "_predicate"
+  :name  "eventMonitor/query"
+  :doc   "Query used to monitor for changes. At the given cron schedule, if the results of this query differ between last/current time, the webhook will be invoked. The before/after results are included in the eventData posted to webhook as 'flureeData.before' and 'flureeData.after'."
+  :type  "string"
+  :index true}
+ {:_id                "_predicate"
+  :name               "eventMonitor/auth"
+  :doc                "Auth identity used to execute query specified above."
+  :type               "ref"
+  :restrictCollection "_auth"}
+ {:_id   "_predicate"
+  :name  "eventMonitor/cron"
+  :doc   "Cron schedule as a string which includes seconds as first expression (six parts total)."
+  :type  "string"
+  :index true}
+ {:_id   "_predicate"
+  :name  "eventMonitor/webhook"
+  :doc   "Webhook URI to invoke when event is triggered."
+  :type  "uri"
+  :index true}
+ {:_id  "_predicate"
+  :name "eventMonitor/eventData"
+  :doc  "Optional JSON object/map that will be POSTed to the webhook endpoint. Fluree will also embed the 'flureeData' key into this map with query results."
+  :type "json"}
+ {:_id  "_predicate"
+  :name "eventMonitor/eventQuery"
+  :doc  "Optional query whose results will also be included in eventData posted to webhook as 'flureeData.eventQuery'."
+  :type "string"}
+ ]

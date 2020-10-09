@@ -1,0 +1,5 @@
+target/
+.nrepl-port
+.cpcache
+.DS_Store
+git
