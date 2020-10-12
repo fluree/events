@@ -35,8 +35,8 @@ docker-push: docker-image
 	docker push fluree/events:$(VERSION)
 
 docker-push-latest: docker-push
-	docker tag fluree/kafka:$(VERSION) fluree/kafka:latest
-	docker push fluree/kafka:latest
+	docker tag fluree/events:$(VERSION) fluree/events:latest
+	docker push fluree/events:latest
 
 clean:
 	rm -rf build
