@@ -34,6 +34,10 @@ docker-image: target/fluree-events.standalone.jar
 docker-push: docker-image
 	docker push fluree/events:$(VERSION)
 
+docker-push-latest: docker-push
+	docker tag fluree/kafka:$(VERSION) fluree/kafka:latest
+	docker push fluree/kafka:latest
+
 clean:
 	rm -rf build
 	rm -rf target
