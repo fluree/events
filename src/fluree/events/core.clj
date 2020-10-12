@@ -45,7 +45,7 @@
 
 (defn query-change?
   [db monitor]
-  (log/info "query-change? monitor: " (pr-str monitor))
+  (log/debug "query-change? monitor: " (pr-str monitor))
   (let [block      (latest-block db)
         old-block  (or (get-in @system [:block (:_id monitor)])
                        (:start-block @system))
