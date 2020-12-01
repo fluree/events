@@ -84,8 +84,9 @@
               (query-change? db monitor))
             (recur now))))
       (catch Exception e
-        (log/error "Caught fatal exception: " (.getMessage e))
-        (throw e)))
+        (log/error "Caught fatal exception, exiting: " (.getMessage e))
+        (throw e)
+        (System/exit 1)))
     (log/info "Closed!")
     (swap! system dissoc :closed?)
     :closed))
