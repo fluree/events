@@ -1,10 +1,7 @@
 (ns fluree.events.core
   (:gen-class)
   (:require [fluree.db.api :as fdb]
-            [clj-cron-parse.core :refer [next-date]]
-            [clj-time.core :as t]
             [clojure.core.async :as async :refer [go-loop]]
-            [clojure.string :as str]
             [clojure.walk :refer [keywordize-keys]]
             [clojure.tools.logging :as log]
             [cheshire.core :as json]
@@ -69,7 +66,8 @@
         old-result @(fdb/query old-db query)]
     (if (not= result old-result)
       (do
-        (log/info "Difference triggered for:" (:eventMonitor/id monitor) (:eventMonitor/name monitor))
+        (log/info (str "Monitor triggered - last execution as-of: " old-block " this execution as-of: " block)
+                  (json/encode monitor))
         (try @(xhttp/get (:eventMonitor/webhook monitor))
              (catch Exception e (log/error e (str "Error executing webhook: " (:eventMonitor/webhook monitor)
                                                   {:monitor monitor}))))
@@ -162,14 +160,6 @@
        (map keywordize-keys))
 
 
-  (def now (t/now))
-  now
-  (next-date now "*/15 * * * * *")
-  (not (t/after? (next-date now "*/15 * * * * *")
-                 (t/now)))
-
-
-  (next-date now "5 * * * * *")
 
   (async/<!! (xhttp/get-json "https://l92xqqxncf.execute-api.us-east-1.amazonaws.com/Prod/hello" {:body {:token "BLAH"}}))
 
