@@ -1,0 +1,1000 @@
+[
+  {
+    "_id": "_collection",
+    "name": "organization"
+  },
+  {
+    "_id": "_predicate",
+    "name": "organization/name",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "organization/members",
+    "type": "ref",
+    "component": true,
+    "multi": true,
+    "restrictCollection": "_user"
+  },
+  {
+    "_id": "_predicate",
+    "name": "organization/datasets",
+    "type": "ref",
+    "component": true,
+    "multi": true,
+    "restrictCollection": "metadata"
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/name",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_collection",
+    "name": "metadata",
+    "spec": ["_fn$ReqSecurity", "_fn$ReqControlSet"],
+    "specDoc": "Metadata is required to have /security and /controlSet"
+  },
+  {
+    "_id": "_fn$ReqSecurity",
+    "name": "ReqSecurity",
+    "code": "(boolean (get (?s) \"metadata/security\"))"
+  },
+  {
+    "_id": "_fn$ReqControlSet",
+    "name": "ReqControlSet",
+    "code": "(boolean (get (?s) \"metadata/controlSet\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/tags",
+    "type": "string",
+    "multi": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/derivedDatasets",
+    "type": "ref",
+    "multi": true,
+    "restrictCollection": "metadata"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/comments",
+    "type": "ref",
+    "multi": true,
+    "component": true,
+    "restrictCollection": "comment"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/ports",
+    "type": "int",
+    "multi": true,
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/stats",
+    "type": "json"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/updateTime",
+    "type": "instant"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/secureComments",
+    "type": "string",
+    "multi": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/isExtHosted",
+    "type": "boolean"
+  },
+  {
+    "_id": "_collection",
+    "name": "comment"
+  },
+  {
+    "_id": "_predicate",
+    "name": "comment/issuedBy",
+    "type": "ref",
+    "restrictCollection": "_user"
+  },
+  {
+    "_id": "_predicate",
+    "name": "comment/text",
+    "type": "string"
+  },
+  {
+    "_id": "_predicate",
+    "name": "comment/instant",
+    "type": "instant"
+  },
+  {
+    "_id": "_predicate",
+    "name": "comment/comments",
+    "type": "ref",
+    "multi": true,
+    "component": true,
+    "restrictCollection": "comment"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/exercise",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [EXERCISE]"
+  },
+  {
+    "_id": "_tag",
+    "id": "metadata/exercise:EXERCISE"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/security",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "securityType"
+  },
+  {
+    "_id": "_collection",
+    "name": "securityType",
+    "spec": ["_fn$ReqClassification"],
+    "specDoc": "SecurityType is required to have /Classification"
+  },
+  {
+    "_id": "_fn$ReqClassification",
+    "name": "ReqClassification",
+    "code": "(boolean (get (?s) \"securityType/Classification\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "securityType/Classification",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [UNCLASSIFIED, U]"
+  },
+  {
+    "_id": "_tag",
+    "id": "securityType/Classification:UNCLASSIFIED"
+  },
+  {
+    "_id": "_tag",
+    "id": "securityType/Classification:U"
+  },
+  {
+    "_id": "_predicate",
+    "name": "securityType/Dissemination",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [FOR OFFICIAL USE ONLY, FOUO]"
+  },
+  {
+    "_id": "_tag",
+    "id": "securityType/Dissemination:FOR OFFICIAL USE ONLY"
+  },
+  {
+    "_id": "_tag",
+    "id": "securityType/Dissemination:FOUO"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/authorityReference",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "authorityReferenceType"
+  },
+  {
+    "_id": "_collection",
+    "name": "authorityReferenceType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "authorityReferenceType/id",
+    "type": "string"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/controlSet",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "controlSetType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/missionContext",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "missionContext"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/ocoMetadata",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "ocoMetadataType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/cdsMetadata",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "cdsMetadataType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/provenanceData",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "provenanceType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "metadata/daasURI",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_collection",
+    "name": "provenanceType",
+    "spec": ["_fn$ReqDataProviderType", "_fn$ReqDataProvider"],
+    "specDoc": "provenanceType is required to have /dataProviderType, /dataProvider"
+  },
+  {
+    "_id": "_fn$ReqDataProviderType",
+    "name": "ReqDataProviderType",
+    "code": "(boolean (get (?s) \"provenanceType/dataProviderType\"))"
+  },
+  {
+    "_id": "_fn$ReqDataProvider",
+    "name": "ReqDataProvider",
+    "code": "(boolean (get (?s) \"provenanceType/dataProvider\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "provenanceType/dataProviderType",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [DMSS-KIT]"
+  },
+  {
+    "_id": "_tag",
+    "id": "provenanceType/dataProviderType:DMSS-KIT"
+  },
+  {
+    "_id": "_predicate",
+    "name": "provenanceType/dataProvider",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "cdsMetadataType",
+    "spec": ["_fn$ReqDestinationDomain", "_fn$ReqSourceDomain"],
+    "specDoc": "cdsMetadataType is required to have /destinationDomain, /sourceDomain"
+  },
+  {
+    "_id": "_fn$ReqDestinationDomain",
+    "name": "ReqDestinationDomain",
+    "code": "(boolean (get (?s) \"cdsMetadataType/destinationDomain\"))"
+  },
+  {
+    "_id": "_fn$ReqSourceDomain",
+    "name": "ReqSourceDomain",
+    "code": "(boolean (get (?s) \"cdsMetadataType/sourceDomain\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "cdsMetadataType/destinationDomain",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [unclassified, secret, top secret]"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/destinationDomain:unclassified"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/destinationDomain:secret"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/destinationDomain:top secret"
+  },
+  {
+    "_id": "_predicate",
+    "name": "cdsMetadataType/sourceDomain",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [unclassified, secret, top secret]"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/sourceDomain:unclassified"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/sourceDomain:secret"
+  },
+  {
+    "_id": "_tag",
+    "id": "cdsMetadataType/sourceDomain:top secret"
+  },
+  {
+    "_id": "_collection",
+    "name": "ocoMetadataType",
+    "spec": ["_fn$ReqInfrastructureUsed", "_fn$ReqCyberToolsUsed"],
+    "specDoc": "OcoMetadataType is required to have /infrastructureUsed, /cyberToolsUsed"
+  },
+  {
+    "_id": "_fn$ReqInfrastructureUsed",
+    "name": "ReqInfrastructureUsed",
+    "code": "(boolean (get (?s) \"ocoMetadataType/infrastructureUsed\"))"
+  },
+  {
+    "_id": "_fn$ReqCyberToolsUsed",
+    "name": "ReqCyberToolsUsed",
+    "code": "(boolean (get (?s) \"ocoMetadataType/cyberToolsUsed\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "ocoMetadataType/infrastructureUsed",
+    "type": "ref",
+    "component": true,
+    "multi": true,
+    "restrictCollection": "infrastructureType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "ocoMetadataType/cyberToolsUsed",
+    "type": "ref",
+    "component": true,
+    "multi": true,
+    "restrictCollection": "cyberToolType"
+  },
+  {
+    "_id": "_collection",
+    "name": "infrastructureType",
+    "spec": ["_fn$ReqInfrastructureId"],
+    "specDoc": "InfrastructureType is required to have /id"
+  },
+  {
+    "_id": "_fn$ReqInfrastructureId",
+    "name": "ReqInfrastructureId",
+    "code": "(boolean (get (?s) \"infrastructureType/id\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "infrastructureType/id",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "cyberToolType",
+    "spec": ["_fn$ReqCyberToolId"],
+    "specDoc": "cyberToolType is required to have /id"
+  },
+  {
+    "_id": "_fn$ReqCyberToolId",
+    "name": "ReqCyberToolId",
+    "code": "(boolean (get (?s) \"cyberToolType/id\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "cyberToolType/id",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "missionContext",
+    "spec": ["_fn$ReqMission", "_fn$ReqActivity"],
+    "specDoc": "MssionContext is required to have /mission, /activity"
+  },
+  {
+    "_id": "_fn$ReqMission",
+    "name": "ReqMission",
+    "code": "(boolean (get (?s) \"missionContext/mission\"))"
+  },
+  {
+    "_id": "_fn$ReqActivity",
+    "name": "ReqActivity",
+    "code": "(boolean (get (?s) \"missionContext/activity\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "missionContext/mission",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "missionType"
+  },
+  {
+    "_id": "_collection",
+    "name": "missionType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "missionType/id",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "activityType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "activityType/id",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "missionContext/activity",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "activityType"
+  },
+  {
+    "_id": "_collection",
+    "name": "controlSetType",
+    "spec": [
+      "_fn$ReqResourceIdentity",
+      "_fn$ReqCreateDateTime",
+      "_fn$ReqDataType",
+      "_fn$ReqDataSource"
+    ],
+    "specDoc": "ControlSetType is required to have /resourceIdentity, /createDateTime, /dataType, /dataSource"
+  },
+  {
+    "_id": "_fn$ReqResourceIdentity",
+    "name": "ReqResourceIdentity",
+    "code": "(boolean (get (?s) \"controlSetType/resourceIdentity\"))"
+  },
+  {
+    "_id": "_fn$ReqCreateDateTime",
+    "name": "ReqCreateDateTime",
+    "code": "(boolean (get (?s) \"controlSetType/createDateTime\"))"
+  },
+  {
+    "_id": "_fn$ReqDataType",
+    "name": "ReqDataType",
+    "code": "(boolean (get (?s) \"controlSetType/dataType\"))"
+  },
+  {
+    "_id": "_fn$ReqDataSource",
+    "name": "ReqDataSource",
+    "code": "(boolean (get (?s) \"controlSetType/dataSource\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/resourceIdentity",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "resourceIdentityType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/resourceDisposition",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "resourceDispositionType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/policyReference",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "policyReferenceType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/responsibleEntity",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "responsibleEntityType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/createDateTime",
+    "type": "instant"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/dataType",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [Asset Compliance, Firewall Logs, Endpoint Security, Indicators, Analysis, DNS, Enrichment, IDS/IPS, Firewall/VPN, Proxy, Email Logs, Network Analysis, Windows Logs, Asset Ticketing, Asset Attribution, Session Analysis, Vulnerability Scan, Active Directory, SIEM, Access Controls, Management System, Operating System, Audit]"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Asset Compliance"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Firewall Logs"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Endpoint Security"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Indicators"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Analysis"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:DNS"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Enrichment"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:IDS-IPS"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Firewall-VPN"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Proxy"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Email Logs"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Network Analysis"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Windows Logs"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Asset Ticketing"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Asset Attribution"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Session Analysis"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Vulnerability Scan"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Active Directory"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:SIEM"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Access Controls"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Management System"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Operating System"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataType:Audit"
+  },
+  {
+    "_id": "_predicate",
+    "name": "controlSetType/dataSource",
+    "type": "tag",
+    "restrictTag": true,
+    "doc": "enum: [acas, asa-sucom, aess, ais, autofocus, blutmagie-tor, bro, cnmf-bro, cisco-joy-fingerprint-db, critical stack, crowdstrike, dns, dshield, esiem, esiem-cef, esiem-eesmg-iap, esiem-suricata-iap, esiem-wef, esiem-zeek, evtx-c, evtx-json, expanse-exposures, firehol, firewall-k, geobase, greynoise, hbss-raw, iana, itsm, jrss-cef, majestic-million, netflow, nipr-info-asn, nipr-info-ip, nipr-info-ip-summary, nvd-cpe, nvd-cve, openphish, paloalto-defender, pan-sucom, proxy, recorded futures, sccm, service-registry, spongebob-service, tanium, torexitnodes, tychon-asset-vuln, whoi]"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:acas"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:asa-sucom"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:aess"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:ais"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:autofocus"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:blutmagie-tor"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:bro"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:cnmf-bro"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:cisco-joy-fingerprint-db"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:critical stack"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:crowdstrike"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:dns"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:dshield"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem-cef"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem-eesmg-iap"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem-suricata-iap"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem-wef"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:esiem-zeek"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:evtx-c"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:evtx-json"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:expanse-exposures"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:firehol"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:firewall-k"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:geobase"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:greynoise"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:hbss-raw"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:iana"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:itsm"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:jrss-cef"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:majestic-million"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:netflow"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:nipr-info-asn"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:nipr-info-ip"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:nipr-info-ip-summary"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:nvd-cpe"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:nvd-cve"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:openphish"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:paloalto-defender"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:pan-sucom"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:proxy"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:recorded futures"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:sccm"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:service-registry"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:spongebob-service"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:tanium"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:torexitnodes"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:tychon-asset-vuln"
+  },
+  {
+    "_id": "_tag",
+    "id": "controlSetType/dataSource:whois"
+  },
+  {
+    "_id": "_collection",
+    "name": "responsibleEntityType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "responsibleEntityType/orig",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "responsibleEntityType/cust",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "policyReferenceType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "policyReferenceType/reference",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "resourceDispositionType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "resourceDispositionType/rule",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "resourceIdentityType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "resourceIdentityType/id",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "resourceIdentityType/hash",
+    "type": "ref",
+    "component": true,
+    "restrictCollection": "hashType"
+  },
+  {
+    "_id": "_collection",
+    "name": "hashType",
+    "spec": ["_fn$ReqHash", "_fn$ReqAlgorithm"],
+    "specDoc": "HashType is required to have /hash, /algorithm"
+  },
+  {
+    "_id": "_fn$ReqHash",
+    "name": "ReqHash",
+    "code": "(boolean (get (?s) \"hashType/hash\"))"
+  },
+  {
+    "_id": "_fn$ReqAlgorithm",
+    "name": "ReqAlgorithm",
+    "code": "(boolean (get (?s) \"hashType/algorithm\"))"
+  },
+  {
+    "_id": "_predicate",
+    "name": "hashType/algorithm",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "hashType/hash",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_collection",
+    "name": "bucket"
+  },
+  {
+    "_id": "_predicate",
+    "name": "bucket/name",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "bucket/verified",
+    "type": "boolean"
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/buckets",
+    "type": "ref",
+    "multi": true,
+    "restrictCollection": "bucket"
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/displayName",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/email",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/missions",
+    "type": "ref",
+    "multi": true,
+    "restrictCollection": "missionType"
+  },
+  {
+    "_id": "_predicate",
+    "name": "_user/datasets",
+    "type": "ref",
+    "multi": true,
+    "restrictCollection": "metadata",
+    "upsert": true
+  },
+  {
+    "_id": "_collection$eventMonitor",
+    "name": "eventMonitor"
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/id",
+    "doc": "Optional unique string idfor this eventMonitor.",
+    "type": "string",
+    "unique": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/name",
+    "doc": "Event Monitor name. Not unique and can be searched for.",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/query",
+    "doc": "Query used to monitor for changes. At the given cron schedule, if the results of this query differ between last/current time, the webhook will be invoked. The before/after results are included in the eventData posted to webhook as 'flureeData.before' and 'flureeData.after'.",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/auth",
+    "doc": "Auth identity used to execute query specified above.",
+    "type": "ref",
+    "restrictCollection": "_auth"
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/cron",
+    "doc": "Cron schedule as a string which includes seconds as first expression (six parts total).",
+    "type": "string",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/webhook",
+    "doc": "Webhook URI to invoke when event is triggered.",
+    "type": "uri",
+    "index": true
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/eventData",
+    "doc": "Optional JSON object/map that will be POSTed to the webhook endpoint. Fluree will also embed the 'flureeData' key into this map with query results.",
+    "type": "json"
+  },
+  {
+    "_id": "_predicate",
+    "name": "eventMonitor/eventQuery",
+    "doc": "Optional query whose results will also be included in eventData posted to webhook as 'flureeData.eventQuery'.",
+    "type": "string"
+  }
+]

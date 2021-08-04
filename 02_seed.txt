@@ -1,0 +1,1088 @@
+[
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Email Logs",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "69b0975b16de04c38294f643ab7e15a157290435ead25c0aef19dc2718f965d4",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1570765824,
+      "dataSource": "firehol",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "HUSHED SPARROW" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "DNS",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "4d8a628fb59923f174e58eaaf05914a3df8c7d0a028b522b8cec36cef758693f",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1597405163,
+      "dataSource": "jrss-cef",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "SUPERB MOSQUITO" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Proxy",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "00060a365ea415e0473e8f5e7e71436cb6836b85fc72b6efdaf742508130a62c",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1565875786,
+      "dataSource": "esiem-eesmg-iap",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "LUXURIANT WEASEL" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOUO"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Asset Ticketing",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "45a786f4aa5b7b6c2fff5f361b72fdf6d9cb37e5e65c5d86c1a41bc348da1d99",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1537824789,
+      "dataSource": "evtx-c",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "SMOOTH BEAR" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "U" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Analysis",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "2db96d769203683f8943fd3f25b32a46875151315e283c329a0f94f195722bdb",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1583484230,
+      "dataSource": "expanse-exposures",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "secret",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "MOLDY PENGUIN" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOUO"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Asset Compliance",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "907bf6b75b1c4e9922be69dd03cb5da5204fd51b764679dc352330d6930efe14",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1587583881,
+      "dataSource": "crowdstrike",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "RECEPTIVE HUMAN" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Asset Compliance",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "e0e5507357087769f6cf8fa77c09f9058eacc097c8254d355a0aca5d9c87d051",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1586620830,
+      "dataSource": "dshield",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "TACKY CHOUGH" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOUO"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Operating System",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "5cd0b60d4d3b1394abce57920ba918e6c4a3526ca7633ac5c1870e584125e89d",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1571477916,
+      "dataSource": "whois",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "BOILING LORIS" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Analysis",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "1483ff76d9dbf5a5508dc90ddec481eab77481e2255301ed221240fb47d1890b",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1594623876,
+      "dataSource": "jrss-cef",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "PLACID \nCHICKEN" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Analysis",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "86658b0b991a6b42ec204a7c278fee773fb157eb87e4d3fd4cc896743d8f722f",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1551877278,
+      "dataSource": "cisco-joy-fingerprint-db",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "unclassified"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "MACHO SALAMANDER" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Session Analysis",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "5e0464bab803666c16af2e13785df4f7ee4baf0657ce7247f9a20f868587a5b7",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1533485834,
+      "dataSource": "tanium",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "secret",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "GENTLE SCORPION" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "DNS",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "f3e0a07c200684bd37d8448eb2a1d028de72978a00aaaaba6742dae208696de4",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1557333245,
+      "dataSource": "iana",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "SCREECHING GOLDFINCH" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Endpoint Security",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "2176c3922517042b66838eff63186fb2ea90649237531114ead27f5e93e0c77a",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1605222391,
+      "dataSource": "sccm",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "MAJESTIC MANATEE" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Proxy",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "20c0fd26d7a9431d19ccf358ab671817dda804a5a4531b8dfa4bb3c83976e984",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1601078187,
+      "dataSource": "recorded futures",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "BIZARRE ROOK" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOUO"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Vulnerability Scan",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "1fe277c9de6d9ce98a9c598c4bcf97bca37ab950c8e06160a63ec7e0c566f229",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1556630542,
+      "dataSource": "firewall-k",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "LIVELY CATTLE" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "DNS",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "38893517a71b7e6284c46c6b5db82a2b7fc6a0aa0e9e850f4c545e77ecaf30a6",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1581448419,
+      "dataSource": "esiem-cef",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "HELPFUL AARDVARK" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOUO"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Asset Ticketing",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "2e88dbc070fcabf2baf192839111b64b0dbe8531b5f2e848f80d0eb7c120075d",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1597794280,
+      "dataSource": "hbss-raw",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "FEIGNED ROOK" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Management System",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "c41aca4f682403c1115745199d773d201bd849e807c6e0875e711f9c749bcd8d",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1568764690,
+      "dataSource": "acas",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "top secret",
+      "sourceDomain": "unclassified"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "SHORT TOAD" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": {
+      "_id": "securityType",
+      "Classification": "UNCLASSIFIED",
+      "Dissemination": "FOR OFFICIAL USE ONLY"
+    },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Access Controls",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "73e187e54391fd2422e47ae8239b69cddbaf22a77da802dae27a5f996e39cf85",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1597968923,
+      "dataSource": "acas",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "AWARE NIGHTINGALE" }
+    }
+  },
+  {
+    "_id": "metadata",
+    "security": { "_id": "securityType", "Classification": "UNCLASSIFIED" },
+    "isExtHosted": true,
+    "controlSet": {
+      "_id": "controlSetType",
+      "dataType": "Enrichment",
+      "resourceIdentity": {
+        "_id": "resourceIdentityType",
+        "hash": {
+          "_id": "hashType",
+          "hash": "27e1fe26a7802d75faf56bbb18c96d1d2d9ae4a4193df9a0f86fc6af31f8147b",
+          "algorithm": "SHA-256"
+        },
+        "id": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-4-only-DNS/2015-03-24_capture1-only-dns.binetflow"
+      },
+      "createDateTime": 1565974970,
+      "dataSource": "recorded futures",
+      "responsibleEntity": {
+        "_id": "responsibleEntityType",
+        "cust": "cust",
+        "orig": "orig"
+      },
+      "resourceDisposition": {
+        "_id": "resourceDispositionType",
+        "rule": "rule"
+      },
+      "policyReference": { "_id": "policyReferenceType", "reference": "ref" }
+    },
+    "provenanceData": {
+      "_id": "provenanceType",
+      "dataProviderType": "DMSS-KIT",
+      "dataProvider": "provider"
+    },
+    "cdsMetadata": {
+      "_id": "cdsMetadataType",
+      "destinationDomain": "unclassified",
+      "sourceDomain": "top secret"
+    },
+    "ocoMetadata": {
+      "_id": "ocoMetadataType",
+      "infrastructureUsed": [{ "_id": "infrastructureType", "id": "infra1" }],
+      "cyberToolsUsed": [{ "_id": "cyberToolType", "id": "tool1" }]
+    },
+    "authorityReference": { "_id": "authorityReferenceType", "id": "ref" },
+    "exercise": "EXERCISE",
+    "missionContext": {
+      "_id": "missionContext",
+      "activity": { "_id": "activityType", "id": "activity" },
+      "mission": { "_id": "missionType", "id": "INTERESTING SEAHORSE" }
+    }
+  },
+  { "_id": "bucket", "name": "dax-demo-consumer", "verified": true },
+  { "_id": "missionType", "id": "CKQ-738" }
+]

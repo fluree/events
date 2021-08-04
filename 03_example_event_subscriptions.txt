@@ -1,0 +1,39 @@
+SUBSCRIBE TO ALL DATASETS
+
+[
+    {
+        "_id": "eventMonitor",
+        "name": "*",
+        "query": "{\"select\":[\"_id\"],\"from\":\"metadata\",\"limit\":1}",
+        "auth": [
+            "_auth/id",
+            "TfE8ThfGpMa8SiqaaC9igpsK7xMR48vifE5"
+        ],
+        "cron": "0/15 * * ? * * *",
+        "webhook": "https://l92xqqxncf.execute-api.us-east-1.amazonaws.com/Prod/hello",
+        "eventData": {
+            "token": "ABCDEFG"
+        },
+        "eventQuery": "{\"select\":[\"*\"],\"from\":\"metadata\",\"limit\":1}"
+    }
+]
+
+SUBSCRIBE TO A SPECIFIC DATASET MONTHLY
+
+[
+    {
+        "_id": "eventMonitor",
+        "name": "369435906932747",
+        "query": "{\"select\":[\"*\"],\"from\":369435906932747,\"limit\":1}",
+        "auth": [
+            "_auth/id",
+            "TfE8ThfGpMa8SiqaaC9igpsK7xMR48vifE5"
+        ],
+        "cron": "0 0 10 ? * MON",
+        "webhook": "https://l92xqqxncf.execute-api.us-east-1.amazonaws.com/Prod/hello",
+        "eventData": {
+            "token": "ABCDEFG"
+        },
+        "eventQuery": "{\"select\":[\"*\"],\"from\":369435906932747,\"limit\":1}"
+    }
+]
